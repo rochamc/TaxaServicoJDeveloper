@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns0="http://www.fiap.com.br"
+            targetNamespace="http://www.fiap.com.br" elementFormDefault="qualified">
+  <xsd:element name="paramIn">
+    <xsd:annotation>
+      <xsd:documentation>A sample element</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="servico" type="xsd:string"/>
+        <xsd:element name="idadeCidado" type="xsd:integer"/>
+        <xsd:element name="hasBoletimOcorrencia" type="xsd:boolean"/>
+        <xsd:element name="isSegundaVia" type="xsd:boolean"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="paramOut">
+    <xsd:annotation>
+      <xsd:documentation>A sample element</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="isCidadoElegivel" type="xsd:boolean"/>
+        <xsd:element name="valorTaxa" type="xsd:float"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

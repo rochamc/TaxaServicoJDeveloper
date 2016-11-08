@@ -1,0 +1,978 @@
+<?xml version="1.0"?>
+<RuleDictionary id="G}46913807:15840afc688:-7bd0" xmlns="http://xmlns.oracle.com/rules/dictionary">
+  <Name>OracleRules_RegraTaxaServicos</Name>
+  <Alias>OracleRules_RegraTaxaServicos</Alias>
+  <Package>www.fiap.com.br</Package>
+  <Version>12.1.1.0.0</Version>
+  <DataModel id="L}1">
+    <CreationUpdateNumber>2</CreationUpdateNumber>
+    <QualifierPattern>{member} of {fact}</QualifierPattern>
+    <JaxbFactType id="J}br.com.fiap.ParamIn">
+      <Name>br.com.fiap.ParamIn</Name>
+      <Alias>Variable_RegraTaxaServicos_ParamIn</Alias>
+      <Visible>true</Visible>
+      <CreationUpdateNumber>3</CreationUpdateNumber>
+      <Property id="J}br.com.fiap.ParamIn.{hasBoletimOcorrencia}">
+        <Name>hasBoletimOcorrencia</Name>
+        <Alias>hasBoletimOcorrencia</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <IDofType>J}boolean</IDofType>
+        <ListContentID>B}nil</ListContentID>
+        <Type>boolean</Type>
+        <IDofBucketSet>B}bbs</IDofBucketSet>
+        <BucketSet>boolean</BucketSet>
+        <Writable>true</Writable>
+        <Readable>true</Readable>
+        <Local>true</Local>
+        <Expression id="L}30">
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <PrimaryKey>false</PrimaryKey>
+      </Property>
+      <Property id="J}br.com.fiap.ParamIn.{idadeCidado}">
+        <Name>idadeCidado</Name>
+        <Alias>idadeCidado</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <IDofType>J}java.math.BigInteger</IDofType>
+        <ListContentID>B}nil</ListContentID>
+        <Type>BigInteger</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+        <Writable>true</Writable>
+        <Readable>true</Readable>
+        <Local>true</Local>
+        <Expression id="L}31">
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <PrimaryKey>false</PrimaryKey>
+      </Property>
+      <Property id="J}br.com.fiap.ParamIn.{isSegundaVia}">
+        <Name>isSegundaVia</Name>
+        <Alias>isSegundaVia</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <IDofType>J}boolean</IDofType>
+        <ListContentID>B}nil</ListContentID>
+        <Type>boolean</Type>
+        <IDofBucketSet>B}bbs</IDofBucketSet>
+        <BucketSet>boolean</BucketSet>
+        <Writable>true</Writable>
+        <Readable>true</Readable>
+        <Local>true</Local>
+        <Expression id="L}32">
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <PrimaryKey>false</PrimaryKey>
+      </Property>
+      <Property id="J}br.com.fiap.ParamIn.{servico}">
+        <Name>servico</Name>
+        <Alias>servico</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <IDofType>J}java.lang.String</IDofType>
+        <ListContentID>B}nil</ListContentID>
+        <Type>String</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+        <Writable>true</Writable>
+        <Readable>true</Readable>
+        <Local>true</Local>
+        <Expression id="L}33">
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <PrimaryKey>false</PrimaryKey>
+      </Property>
+      <Method id="J}public boolean br.com.fiap.ParamIn.isIsSegundaVia()">
+        <Name>isIsSegundaVia</Name>
+        <Alias>isIsSegundaVia</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <Modifiers id="L}15">
+          <CreationUpdateNumber>3</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}boolean</IDofType>
+        <Type>boolean</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public void br.com.fiap.ParamIn.setHasBoletimOcorrencia(boolean)">
+        <Name>setHasBoletimOcorrencia</Name>
+        <Alias>setHasBoletimOcorrencia</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <OverloadedParameter id="G}46913807:15840afc688:-7bce">
+          <CreationUpdateNumber>3</CreationUpdateNumber>
+          <IDsOfType>J}boolean</IDsOfType>
+        </OverloadedParameter>
+        <Modifiers id="L}17">
+          <CreationUpdateNumber>3</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}void</IDofType>
+        <Type>void</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public java.lang.String br.com.fiap.ParamIn.getServico()">
+        <Name>getServico</Name>
+        <Alias>getServico</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <Modifiers id="L}19">
+          <CreationUpdateNumber>3</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}java.lang.String</IDofType>
+        <Type>String</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public void br.com.fiap.ParamIn.setServico(java.lang.String)">
+        <Name>setServico</Name>
+        <Alias>setServico</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <OverloadedParameter id="G}46913807:15840afc688:-7bcd">
+          <CreationUpdateNumber>3</CreationUpdateNumber>
+          <IDsOfType>J}java.lang.String</IDsOfType>
+        </OverloadedParameter>
+        <Modifiers id="L}21">
+          <CreationUpdateNumber>3</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}void</IDofType>
+        <Type>void</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public void br.com.fiap.ParamIn.setIdadeCidado(java.math.BigInteger)">
+        <Name>setIdadeCidado</Name>
+        <Alias>setIdadeCidado</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <OverloadedParameter id="G}46913807:15840afc688:-7bcc">
+          <CreationUpdateNumber>3</CreationUpdateNumber>
+          <IDsOfType>J}java.math.BigInteger</IDsOfType>
+        </OverloadedParameter>
+        <Modifiers id="L}23">
+          <CreationUpdateNumber>3</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}void</IDofType>
+        <Type>void</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public void br.com.fiap.ParamIn.setIsSegundaVia(boolean)">
+        <Name>setIsSegundaVia</Name>
+        <Alias>setIsSegundaVia</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <OverloadedParameter id="G}46913807:15840afc688:-7bcb">
+          <CreationUpdateNumber>3</CreationUpdateNumber>
+          <IDsOfType>J}boolean</IDsOfType>
+        </OverloadedParameter>
+        <Modifiers id="L}25">
+          <CreationUpdateNumber>3</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}void</IDofType>
+        <Type>void</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public java.math.BigInteger br.com.fiap.ParamIn.getIdadeCidado()">
+        <Name>getIdadeCidado</Name>
+        <Alias>getIdadeCidado</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <Modifiers id="L}27">
+          <CreationUpdateNumber>3</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}java.math.BigInteger</IDofType>
+        <Type>BigInteger</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public boolean br.com.fiap.ParamIn.isHasBoletimOcorrencia()">
+        <Name>isHasBoletimOcorrencia</Name>
+        <Alias>isHasBoletimOcorrencia</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <Modifiers id="L}29">
+          <CreationUpdateNumber>3</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}boolean</IDofType>
+        <Type>boolean</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Constructor id="J}public br.com.fiap.ParamIn()">
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <Visible>true</Visible>
+        <Modifiers id="L}13">
+          <CreationUpdateNumber>3</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+      </Constructor>
+      <IDofSuperClass>J}java.lang.Object</IDofSuperClass>
+      <ValidationUpdateNumber>3</ValidationUpdateNumber>
+      <Source>Schemas/taxa_servicos.xsd</Source>
+      <IsArray>false</IsArray>
+      <IDofArrayComponentType>B}nil</IDofArrayComponentType>
+      <SupportXPath>false</SupportXPath>
+      <IsInterface>false</IsInterface>
+      <Modifiers id="L}34">
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <Access>1</Access>
+        <isStatic>false</isStatic>
+        <isFinal>false</isFinal>
+        <isAbstract>false</isAbstract>
+      </Modifiers>
+      <EnumBucketSetID>B}nil</EnumBucketSetID>
+      <Timestamp>0</Timestamp>
+      <ENUM>false</ENUM>
+      <XmlName>//xs:element[@name=&apos;paramIn&apos;]</XmlName>
+      <JAXB2.0>true</JAXB2.0>
+      <NodeName>paramIn</NodeName>
+      <Namespace>http://www.fiap.com.br</Namespace>
+    </JaxbFactType>
+    <JaxbFactType id="J}br.com.fiap.ObjectFactory">
+      <Name>br.com.fiap.ObjectFactory</Name>
+      <Alias>br_com_fiap_ObjectFactory</Alias>
+      <Visible>false</Visible>
+      <CreationUpdateNumber>3</CreationUpdateNumber>
+      <Method id="J}public br.com.fiap.ParamIn br.com.fiap.ObjectFactory.createParamIn()">
+        <Name>createParamIn</Name>
+        <Alias>createParamIn</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <Modifiers id="L}40">
+          <CreationUpdateNumber>3</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}br.com.fiap.ParamIn</IDofType>
+        <Type>Variable_RegraTaxaServicos_ParamIn</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public br.com.fiap.ParamOut br.com.fiap.ObjectFactory.createParamOut()">
+        <Name>createParamOut</Name>
+        <Alias>createParamOut</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <Modifiers id="L}42">
+          <CreationUpdateNumber>3</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}br.com.fiap.ParamOut</IDofType>
+        <Type>Variable_RegraTaxaServicos_ParamOut</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Constructor id="J}public br.com.fiap.ObjectFactory()">
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <Visible>false</Visible>
+        <Modifiers id="L}38">
+          <CreationUpdateNumber>3</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+      </Constructor>
+      <IDofSuperClass>J}java.lang.Object</IDofSuperClass>
+      <ValidationUpdateNumber>3</ValidationUpdateNumber>
+      <Source>Schemas/taxa_servicos.xsd</Source>
+      <IsArray>false</IsArray>
+      <IDofArrayComponentType>B}nil</IDofArrayComponentType>
+      <SupportXPath>false</SupportXPath>
+      <IsInterface>false</IsInterface>
+      <Modifiers id="L}43">
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <Access>1</Access>
+        <isStatic>false</isStatic>
+        <isFinal>false</isFinal>
+        <isAbstract>false</isAbstract>
+      </Modifiers>
+      <EnumBucketSetID>B}nil</EnumBucketSetID>
+      <Timestamp>0</Timestamp>
+      <ENUM>false</ENUM>
+      <JAXB2.0>true</JAXB2.0>
+    </JaxbFactType>
+    <JaxbFactType id="J}br.com.fiap.ParamOut">
+      <Name>br.com.fiap.ParamOut</Name>
+      <Alias>Variable_RegraTaxaServicos_ParamOut</Alias>
+      <Visible>true</Visible>
+      <CreationUpdateNumber>3</CreationUpdateNumber>
+      <Property id="J}br.com.fiap.ParamOut.{isCidadoElegivel}">
+        <Name>isCidadoElegivel</Name>
+        <Alias>isCidadoElegivel</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <IDofType>J}boolean</IDofType>
+        <ListContentID>B}nil</ListContentID>
+        <Type>boolean</Type>
+        <IDofBucketSet>B}bbs</IDofBucketSet>
+        <BucketSet>boolean</BucketSet>
+        <Writable>true</Writable>
+        <Readable>true</Readable>
+        <Local>true</Local>
+        <Expression id="L}56">
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <PrimaryKey>false</PrimaryKey>
+      </Property>
+      <Property id="J}br.com.fiap.ParamOut.{valorTaxa}">
+        <Name>valorTaxa</Name>
+        <Alias>valorTaxa</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <IDofType>J}float</IDofType>
+        <ListContentID>B}nil</ListContentID>
+        <Type>float</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+        <Writable>true</Writable>
+        <Readable>true</Readable>
+        <Local>true</Local>
+        <Expression id="L}57">
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+        <PrimaryKey>false</PrimaryKey>
+      </Property>
+      <Method id="J}public void br.com.fiap.ParamOut.setIsCidadoElegivel(boolean)">
+        <Name>setIsCidadoElegivel</Name>
+        <Alias>setIsCidadoElegivel</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <OverloadedParameter id="G}46913807:15840afc688:-7bca">
+          <CreationUpdateNumber>3</CreationUpdateNumber>
+          <IDsOfType>J}boolean</IDsOfType>
+        </OverloadedParameter>
+        <Modifiers id="L}49">
+          <CreationUpdateNumber>3</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}void</IDofType>
+        <Type>void</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public boolean br.com.fiap.ParamOut.isIsCidadoElegivel()">
+        <Name>isIsCidadoElegivel</Name>
+        <Alias>isIsCidadoElegivel</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <Modifiers id="L}51">
+          <CreationUpdateNumber>3</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}boolean</IDofType>
+        <Type>boolean</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public float br.com.fiap.ParamOut.getValorTaxa()">
+        <Name>getValorTaxa</Name>
+        <Alias>getValorTaxa</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <Modifiers id="L}53">
+          <CreationUpdateNumber>3</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}float</IDofType>
+        <Type>float</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Method id="J}public void br.com.fiap.ParamOut.setValorTaxa(float)">
+        <Name>setValorTaxa</Name>
+        <Alias>setValorTaxa</Alias>
+        <Visible>false</Visible>
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <OverloadedParameter id="G}46913807:15840afc688:-7bc9">
+          <CreationUpdateNumber>3</CreationUpdateNumber>
+          <IDsOfType>J}float</IDsOfType>
+        </OverloadedParameter>
+        <Modifiers id="L}55">
+          <CreationUpdateNumber>3</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+        <Static>false</Static>
+        <IDofType>J}void</IDofType>
+        <Type>void</Type>
+        <IDofBucketSet>B}nil</IDofBucketSet>
+      </Method>
+      <Constructor id="J}public br.com.fiap.ParamOut()">
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <Visible>true</Visible>
+        <Modifiers id="L}47">
+          <CreationUpdateNumber>3</CreationUpdateNumber>
+          <Access>1</Access>
+          <isStatic>false</isStatic>
+          <isFinal>false</isFinal>
+          <isAbstract>false</isAbstract>
+        </Modifiers>
+      </Constructor>
+      <IDofSuperClass>J}java.lang.Object</IDofSuperClass>
+      <ValidationUpdateNumber>3</ValidationUpdateNumber>
+      <Source>Schemas/taxa_servicos.xsd</Source>
+      <IsArray>false</IsArray>
+      <IDofArrayComponentType>B}nil</IDofArrayComponentType>
+      <SupportXPath>false</SupportXPath>
+      <IsInterface>false</IsInterface>
+      <Modifiers id="L}58">
+        <CreationUpdateNumber>3</CreationUpdateNumber>
+        <Access>1</Access>
+        <isStatic>false</isStatic>
+        <isFinal>false</isFinal>
+        <isAbstract>false</isAbstract>
+      </Modifiers>
+      <EnumBucketSetID>B}nil</EnumBucketSetID>
+      <Timestamp>0</Timestamp>
+      <ENUM>false</ENUM>
+      <XmlName>//xs:element[@name=&apos;paramOut&apos;]</XmlName>
+      <JAXB2.0>true</JAXB2.0>
+      <NodeName>paramOut</NodeName>
+      <Namespace>http://www.fiap.com.br</Namespace>
+    </JaxbFactType>
+    <SupportsXPathEnabled>false</SupportsXPathEnabled>
+    <DecisionFunction id="G}46913807:15840afc688:-7bc7">
+      <Name>DecisionService_1</Name>
+      <Alias>DecisionService_1</Alias>
+      <Visible>true</Visible>
+      <CreationUpdateNumber>3</CreationUpdateNumber>
+      <WebService>true</WebService>
+      <CheckRuleFlow>true</CheckRuleFlow>
+      <Stateless>true</Stateless>
+      <DecisionFunctionInput id="G}46913807:15840afc688:-7bc6">
+        <Name>Variable_RegraTaxaServicos_ParamIn</Name>
+        <Alias>Variable_RegraTaxaServicos_ParamIn</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>5</CreationUpdateNumber>
+        <IDofType>J}br.com.fiap.ParamIn</IDofType>
+        <List>false</List>
+        <Tree>true</Tree>
+      </DecisionFunctionInput>
+      <DecisionFunctionRuleSet id="L}61">
+        <CreationUpdateNumber>4</CreationUpdateNumber>
+        <Form>rule set</Form>
+        <Ruleset>Ruleset1</Ruleset>
+        <refID>G}46913807:15840afc688:-7bc8</refID>
+      </DecisionFunctionRuleSet>
+      <DecisionFunctionOutput id="G}46913807:15840afc688:-7bc5">
+        <Name>Variable_RegraTaxaServicos_ParamOut</Name>
+        <Alias>Variable_RegraTaxaServicos_ParamOut</Alias>
+        <Visible>true</Visible>
+        <CreationUpdateNumber>6</CreationUpdateNumber>
+        <IDofType>J}br.com.fiap.ParamOut</IDofType>
+        <List>false</List>
+        <Tree>false</Tree>
+      </DecisionFunctionOutput>
+      <ValidationUpdateNumber>16</ValidationUpdateNumber>
+      <RuleFiringLimit>10000</RuleFiringLimit>
+      <RuleFiringLimitError>true</RuleFiringLimitError>
+      <UniqueRulesets>false</UniqueRulesets>
+    </DecisionFunction>
+    <UpdateNumber>26</UpdateNumber>
+    <ValidationUpdateNumber>26</ValidationUpdateNumber>
+    <UpdateTime>0</UpdateTime>
+  </DataModel>
+  <RuleSet id="G}46913807:15840afc688:-7bc8">
+    <Name>Ruleset1</Name>
+    <Alias>Ruleset1</Alias>
+    <ValidationUpdateNumber>90</ValidationUpdateNumber>
+    <Active>true</Active>
+    <CalendarForm>DateTime</CalendarForm>
+    <RuleSheet id="G}46913807:15840afc688:-7bc2">
+      <Name>DecisionTable1</Name>
+      <Alias>Decision Table 1</Alias>
+      <ValidationUpdateNumber>90</ValidationUpdateNumber>
+      <Priority>medium</Priority>
+      <Active>true</Active>
+      <CalendarForm>DateTime</CalendarForm>
+      <TreeMode>false</TreeMode>
+      <Visible>true</Visible>
+      <SimpleTest id="L}71">
+        <FactType>Variable_RegraTaxaServicos_ParamIn</FactType>
+        <IDofFactType>J}br.com.fiap.ParamIn</IDofFactType>
+        <FactPath>Variable_RegraTaxaServicos_ParamIn</FactPath>
+        <FactPathIDs>L}71</FactPathIDs>
+        <Form>FormIsA</Form>
+        <IDofOperator>B}==</IDofOperator>
+        <Connective>&amp;&amp;</Connective>
+        <Visible>false</Visible>
+        <DSLId>B}nil</DSLId>
+      </SimpleTest>
+      <ShowPatterns>false</ShowPatterns>
+      <Logical>false</Logical>
+      <Dimension id="L}260">
+        <IDofSharedBucketSet>B}nil</IDofSharedBucketSet>
+        <DimensionNode id="L}262">
+          <BucketIDTable>G}46913807:15840afc688:-7bac</BucketIDTable>
+          <Values>&quot;CNH&quot;</Values>
+          <ParentDimensionNode>B}nil</ParentDimensionNode>
+          <ChildDimensionNodes>L}128</ChildDimensionNodes>
+        </DimensionNode>
+        <DimensionNode id="L}263">
+          <BucketIDTable>G}46913807:15840afc688:-7bac</BucketIDTable>
+          <Values>&quot;CNH&quot;</Values>
+          <ParentDimensionNode>B}nil</ParentDimensionNode>
+          <ChildDimensionNodes>L}129</ChildDimensionNodes>
+        </DimensionNode>
+        <DimensionNode id="L}264">
+          <BucketIDTable>G}46913807:15840afc688:-7bac</BucketIDTable>
+          <Values>&quot;CNH&quot;</Values>
+          <ParentDimensionNode>B}nil</ParentDimensionNode>
+          <ChildDimensionNodes>L}163</ChildDimensionNodes>
+        </DimensionNode>
+        <DimensionNode id="L}265">
+          <BucketIDTable>G}46913807:15840afc688:-7bac</BucketIDTable>
+          <Values>&quot;CNH&quot;</Values>
+          <ParentDimensionNode>B}nil</ParentDimensionNode>
+          <ChildDimensionNodes>L}195</ChildDimensionNodes>
+        </DimensionNode>
+        <PrivateBucketSet id="G}46913807:15840afc688:-7bae">
+          <Visible>true</Visible>
+          <CreationUpdateNumber>55</CreationUpdateNumber>
+          <IDofType>J}java.lang.String</IDofType>
+          <ListContentID>B}nil</ListContentID>
+          <Type>String</Type>
+          <Form>Default</Form>
+          <Bucket id="G}46913807:15840afc688:-7bad">
+            <Name>otherwise</Name>
+            <Alias>otherwise</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>55</CreationUpdateNumber>
+            <Inclusive>true</Inclusive>
+            <Otherwise>true</Otherwise>
+            <Excluded>false</Excluded>
+            <Expression id="L}266">
+              <IsConstant>true</IsConstant>
+              <ParameterID>B}nil</ParameterID>
+            </Expression>
+          </Bucket>
+          <Bucket id="G}46913807:15840afc688:-7bac">
+            <Name>&quot;CNH&quot;</Name>
+            <Alias>&quot;CNH&quot;</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>60</CreationUpdateNumber>
+            <Inclusive>false</Inclusive>
+            <Otherwise>false</Otherwise>
+            <Excluded>false</Excluded>
+            <Expression id="L}277">
+              <Value>&quot;CNH&quot;</Value>
+              <ResolvedValue>&quot;CNH&quot;</ResolvedValue>
+              <IsConstant>true</IsConstant>
+              <ParameterID>B}nil</ParameterID>
+            </Expression>
+          </Bucket>
+          <CalendarForm>Date</CalendarForm>
+          <Excluded>false</Excluded>
+          <ValidationUpdateNumber>61</ValidationUpdateNumber>
+        </PrivateBucketSet>
+        <Expression id="L}261">
+          <Value>Variable_RegraTaxaServicos_ParamIn.servico.toUpperCase()</Value>
+          <ResolvedValue>`L}71`.`J}br.com.fiap.ParamIn.{servico}`.`J}public java.lang.String java.lang.String.toUpperCase()`()</ResolvedValue>
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+      </Dimension>
+      <Dimension id="L}126">
+        <IDofSharedBucketSet>B}nil</IDofSharedBucketSet>
+        <DimensionNode id="L}128">
+          <BucketIDTable>G}46913807:15840afc688:-7bb4</BucketIDTable>
+          <Values>&lt;18</Values>
+          <ParentDimensionNode>L}262</ParentDimensionNode>
+          <ChildDimensionNodes>L}69</ChildDimensionNodes>
+        </DimensionNode>
+        <DimensionNode id="L}129">
+          <BucketIDTable>G}46913807:15840afc688:-7bb3</BucketIDTable>
+          <Values>&gt;=18</Values>
+          <ParentDimensionNode>L}263</ParentDimensionNode>
+          <ChildDimensionNodes>L}80</ChildDimensionNodes>
+        </DimensionNode>
+        <DimensionNode id="L}163">
+          <BucketIDTable>G}46913807:15840afc688:-7bb3</BucketIDTable>
+          <Values>&gt;=18</Values>
+          <ParentDimensionNode>L}264</ParentDimensionNode>
+          <ChildDimensionNodes>L}162</ChildDimensionNodes>
+        </DimensionNode>
+        <DimensionNode id="L}195">
+          <BucketIDTable>G}46913807:15840afc688:-7bb3</BucketIDTable>
+          <Values>&gt;=18</Values>
+          <ParentDimensionNode>L}265</ParentDimensionNode>
+          <ChildDimensionNodes>L}194</ChildDimensionNodes>
+        </DimensionNode>
+        <PrivateBucketSet id="G}46913807:15840afc688:-7bb5">
+          <Visible>true</Visible>
+          <CreationUpdateNumber>26</CreationUpdateNumber>
+          <IDofType>J}long</IDofType>
+          <ListContentID>B}nil</ListContentID>
+          <Type>long</Type>
+          <Form>Range</Form>
+          <Bucket id="G}46913807:15840afc688:-7bb4">
+            <Name>&lt;18</Name>
+            <Alias>&lt;18</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>26</CreationUpdateNumber>
+            <Inclusive>true</Inclusive>
+            <Otherwise>true</Otherwise>
+            <Excluded>false</Excluded>
+            <Expression id="L}131">
+              <IsConstant>true</IsConstant>
+              <ParameterID>B}nil</ParameterID>
+            </Expression>
+          </Bucket>
+          <Bucket id="G}46913807:15840afc688:-7bb3">
+            <Name>&gt;=18</Name>
+            <Alias>&gt;=18</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>28</CreationUpdateNumber>
+            <Inclusive>true</Inclusive>
+            <Otherwise>false</Otherwise>
+            <Excluded>false</Excluded>
+            <Expression id="L}136">
+              <Value>18</Value>
+              <ResolvedValue>18</ResolvedValue>
+              <IsConstant>true</IsConstant>
+              <ParameterID>B}nil</ParameterID>
+            </Expression>
+          </Bucket>
+          <CalendarForm>Date</CalendarForm>
+          <Excluded>false</Excluded>
+          <ValidationUpdateNumber>48</ValidationUpdateNumber>
+        </PrivateBucketSet>
+        <Expression id="L}127">
+          <Value>Variable_RegraTaxaServicos_ParamIn.idadeCidado</Value>
+          <ResolvedValue>`L}71`.`J}br.com.fiap.ParamIn.{idadeCidado}`</ResolvedValue>
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+      </Dimension>
+      <Dimension id="L}67">
+        <IDofSharedBucketSet>B}bbs</IDofSharedBucketSet>
+        <DimensionNode id="L}69">
+          <BucketIDTable></BucketIDTable>
+          <Values>-</Values>
+          <ParentDimensionNode>L}128</ParentDimensionNode>
+          <ChildDimensionNodes>L}228</ChildDimensionNodes>
+        </DimensionNode>
+        <DimensionNode id="L}80">
+          <BucketIDTable>B}bbtrue</BucketIDTable>
+          <Values>true</Values>
+          <ParentDimensionNode>L}129</ParentDimensionNode>
+          <ChildDimensionNodes>L}229</ChildDimensionNodes>
+        </DimensionNode>
+        <DimensionNode id="L}162">
+          <BucketIDTable>B}bbfalse</BucketIDTable>
+          <Values>false</Values>
+          <ParentDimensionNode>L}163</ParentDimensionNode>
+          <ChildDimensionNodes>L}230</ChildDimensionNodes>
+        </DimensionNode>
+        <DimensionNode id="L}194">
+          <BucketIDTable>B}bbfalse</BucketIDTable>
+          <Values>false</Values>
+          <ParentDimensionNode>L}195</ParentDimensionNode>
+          <ChildDimensionNodes>L}231</ChildDimensionNodes>
+        </DimensionNode>
+        <PrivateBucketSet id="G}46913807:15840afc688:-7bc1">
+          <Visible>true</Visible>
+          <CreationUpdateNumber>9</CreationUpdateNumber>
+          <IDofType>J}br.com.fiap.ParamIn</IDofType>
+          <ListContentID>B}nil</ListContentID>
+          <Type>Variable_RegraTaxaServicos_ParamIn</Type>
+          <Form>Default</Form>
+          <Bucket id="G}46913807:15840afc688:-7bc0">
+            <Name>otherwise</Name>
+            <Alias>otherwise</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>9</CreationUpdateNumber>
+            <Inclusive>true</Inclusive>
+            <Otherwise>true</Otherwise>
+            <Excluded>false</Excluded>
+            <Expression id="L}72">
+              <IsConstant>true</IsConstant>
+              <ParameterID>B}nil</ParameterID>
+            </Expression>
+          </Bucket>
+          <CalendarForm>Date</CalendarForm>
+          <Excluded>false</Excluded>
+          <ValidationUpdateNumber>-1</ValidationUpdateNumber>
+        </PrivateBucketSet>
+        <SharedBucketSet>boolean</SharedBucketSet>
+        <Expression id="L}68">
+          <Value>Variable_RegraTaxaServicos_ParamIn.hasBoletimOcorrencia</Value>
+          <ResolvedValue>`L}71`.`J}br.com.fiap.ParamIn.{hasBoletimOcorrencia}`</ResolvedValue>
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+      </Dimension>
+      <Dimension id="L}226">
+        <IDofSharedBucketSet>B}bbs</IDofSharedBucketSet>
+        <DimensionNode id="L}228">
+          <BucketIDTable></BucketIDTable>
+          <Values>-</Values>
+          <ParentDimensionNode>L}69</ParentDimensionNode>
+          <ChildDimensionNodes></ChildDimensionNodes>
+        </DimensionNode>
+        <DimensionNode id="L}229">
+          <BucketIDTable></BucketIDTable>
+          <Values>-</Values>
+          <ParentDimensionNode>L}80</ParentDimensionNode>
+          <ChildDimensionNodes></ChildDimensionNodes>
+        </DimensionNode>
+        <DimensionNode id="L}230">
+          <BucketIDTable>B}bbfalse</BucketIDTable>
+          <Values>false</Values>
+          <ParentDimensionNode>L}162</ParentDimensionNode>
+          <ChildDimensionNodes></ChildDimensionNodes>
+        </DimensionNode>
+        <DimensionNode id="L}231">
+          <BucketIDTable>B}bbtrue</BucketIDTable>
+          <Values>true</Values>
+          <ParentDimensionNode>L}194</ParentDimensionNode>
+          <ChildDimensionNodes></ChildDimensionNodes>
+        </DimensionNode>
+        <PrivateBucketSet id="G}46913807:15840afc688:-7bb0">
+          <Visible>true</Visible>
+          <CreationUpdateNumber>49</CreationUpdateNumber>
+          <IDofType>J}java.lang.String</IDofType>
+          <ListContentID>B}nil</ListContentID>
+          <Type>String</Type>
+          <Form>Default</Form>
+          <Bucket id="G}46913807:15840afc688:-7baf">
+            <Name>otherwise</Name>
+            <Alias>otherwise</Alias>
+            <Visible>true</Visible>
+            <CreationUpdateNumber>49</CreationUpdateNumber>
+            <Inclusive>true</Inclusive>
+            <Otherwise>true</Otherwise>
+            <Excluded>false</Excluded>
+            <Expression id="L}232">
+              <IsConstant>true</IsConstant>
+              <ParameterID>B}nil</ParameterID>
+            </Expression>
+          </Bucket>
+          <CalendarForm>Date</CalendarForm>
+          <Excluded>false</Excluded>
+          <ValidationUpdateNumber>51</ValidationUpdateNumber>
+        </PrivateBucketSet>
+        <SharedBucketSet>boolean</SharedBucketSet>
+        <Expression id="L}227">
+          <Value>Variable_RegraTaxaServicos_ParamIn.isSegundaVia</Value>
+          <ResolvedValue>`L}71`.`J}br.com.fiap.ParamIn.{isSegundaVia}`</ResolvedValue>
+          <IsConstant>false</IsConstant>
+          <ParameterID>B}nil</ParameterID>
+        </Expression>
+      </Dimension>
+      <DTAction id="L}91">
+        <Form>Assert New</Form>
+        <Target>Variable_RegraTaxaServicos_ParamOut</Target>
+        <ResolvedTarget>`J}public br.com.fiap.ParamOut()`</ResolvedTarget>
+        <Expression id="L}108">
+          <IsConstant>true</IsConstant>
+          <ParameterAlias>isCidadoElegivel</ParameterAlias>
+          <ParameterID>J}br.com.fiap.ParamOut.{isCidadoElegivel}</ParameterID>
+          <DTActionParameterName>isCidadoElegivel</DTActionParameterName>
+        </Expression>
+        <Expression id="L}109">
+          <IsConstant>true</IsConstant>
+          <ParameterAlias>valorTaxa</ParameterAlias>
+          <ParameterID>J}br.com.fiap.ParamOut.{valorTaxa}</ParameterID>
+          <DTActionParameterName>valorTaxa</DTActionParameterName>
+        </Expression>
+        <DSLId>B}nil</DSLId>
+        <AlwaysSelected>true</AlwaysSelected>
+        <DTActionNode id="L}92">
+          <Selected>false</Selected>
+          <Expression id="L}114">
+            <Value>false</Value>
+            <ResolvedValue>false</ResolvedValue>
+            <IsConstant>false</IsConstant>
+            <ParameterAlias>isCidadoElegivel</ParameterAlias>
+            <ParameterID>J}br.com.fiap.ParamOut.{isCidadoElegivel}</ParameterID>
+            <DTActionParameterName>isCidadoElegivel</DTActionParameterName>
+          </Expression>
+          <Expression id="L}118">
+            <Value>0</Value>
+            <ResolvedValue>0</ResolvedValue>
+            <IsConstant>false</IsConstant>
+            <ParameterAlias>valorTaxa</ParameterAlias>
+            <ParameterID>J}br.com.fiap.ParamOut.{valorTaxa}</ParameterID>
+            <DTActionParameterName>valorTaxa</DTActionParameterName>
+          </Expression>
+        </DTActionNode>
+        <DTActionNode id="L}93">
+          <Selected>false</Selected>
+          <Expression id="L}115">
+            <Value>true</Value>
+            <ResolvedValue>true</ResolvedValue>
+            <IsConstant>false</IsConstant>
+            <ParameterAlias>isCidadoElegivel</ParameterAlias>
+            <ParameterID>J}br.com.fiap.ParamOut.{isCidadoElegivel}</ParameterID>
+            <DTActionParameterName>isCidadoElegivel</DTActionParameterName>
+          </Expression>
+          <Expression id="L}119">
+            <Value>0</Value>
+            <ResolvedValue>0</ResolvedValue>
+            <IsConstant>false</IsConstant>
+            <ParameterAlias>valorTaxa</ParameterAlias>
+            <ParameterID>J}br.com.fiap.ParamOut.{valorTaxa}</ParameterID>
+            <DTActionParameterName>valorTaxa</DTActionParameterName>
+          </Expression>
+        </DTActionNode>
+        <DTActionNode id="L}165">
+          <Selected>false</Selected>
+          <Expression id="L}168">
+            <Value>true</Value>
+            <ResolvedValue>true</ResolvedValue>
+            <IsConstant>true</IsConstant>
+            <ParameterAlias>isCidadoElegivel</ParameterAlias>
+            <ParameterID>J}br.com.fiap.ParamOut.{isCidadoElegivel}</ParameterID>
+            <DTActionParameterName>isCidadoElegivel</DTActionParameterName>
+          </Expression>
+          <Expression id="L}169">
+            <Value>47.55</Value>
+            <ResolvedValue>47.55</ResolvedValue>
+            <IsConstant>true</IsConstant>
+            <ParameterAlias>valorTaxa</ParameterAlias>
+            <ParameterID>J}br.com.fiap.ParamOut.{valorTaxa}</ParameterID>
+            <DTActionParameterName>valorTaxa</DTActionParameterName>
+          </Expression>
+        </DTActionNode>
+        <DTActionNode id="L}197">
+          <Selected>false</Selected>
+          <Expression id="L}205">
+            <Value>true</Value>
+            <ResolvedValue>true</ResolvedValue>
+            <IsConstant>true</IsConstant>
+            <ParameterAlias>isCidadoElegivel</ParameterAlias>
+            <ParameterID>J}br.com.fiap.ParamOut.{isCidadoElegivel}</ParameterID>
+            <DTActionParameterName>isCidadoElegivel</DTActionParameterName>
+          </Expression>
+          <Expression id="L}206">
+            <Value>84.98</Value>
+            <ResolvedValue>84.98</ResolvedValue>
+            <IsConstant>true</IsConstant>
+            <ParameterAlias>valorTaxa</ParameterAlias>
+            <ParameterID>J}br.com.fiap.ParamOut.{valorTaxa}</ParameterID>
+            <DTActionParameterName>valorTaxa</DTActionParameterName>
+          </Expression>
+        </DTActionNode>
+      </DTAction>
+      <DTRule id="L}70">
+        <Override></Override>
+        <RunBefore></RunBefore>
+        <NoConflict></NoConflict>
+        <OverriddenBy></OverriddenBy>
+        <RunAfter></RunAfter>
+        <CreationUpdateNumber>9</CreationUpdateNumber>
+      </DTRule>
+      <DTRule id="L}81">
+        <Override></Override>
+        <RunBefore></RunBefore>
+        <NoConflict></NoConflict>
+        <OverriddenBy></OverriddenBy>
+        <RunAfter></RunAfter>
+        <CreationUpdateNumber>11</CreationUpdateNumber>
+      </DTRule>
+      <DTRule id="L}164">
+        <Override></Override>
+        <RunBefore></RunBefore>
+        <NoConflict></NoConflict>
+        <OverriddenBy></OverriddenBy>
+        <RunAfter></RunAfter>
+        <CreationUpdateNumber>30</CreationUpdateNumber>
+      </DTRule>
+      <DTRule id="L}196">
+        <Override></Override>
+        <RunBefore></RunBefore>
+        <NoConflict></NoConflict>
+        <OverriddenBy></OverriddenBy>
+        <RunAfter></RunAfter>
+        <CreationUpdateNumber>41</CreationUpdateNumber>
+      </DTRule>
+      <AllowGaps>true</AllowGaps>
+      <ConflictPolicy>manual</ConflictPolicy>
+      <OrderRulesByBucket>false</OrderRulesByBucket>
+      <VerticalOrientation>true</VerticalOrientation>
+    </RuleSheet>
+    <VisibilityFilterEnabled>false</VisibilityFilterEnabled>
+    <CreationUpdateNumber>3</CreationUpdateNumber>
+  </RuleSet>
+  <ValidationUpdateNumber>90</ValidationUpdateNumber>
+  <UpdateNumber>90</UpdateNumber>
+  <ResourceBundle>OracleRules_RegraTaxaServicosTranslations</ResourceBundle>
+  <TestModel id="L}3">
+    <ValidationUpdateNumber>1</ValidationUpdateNumber>
+    <UpdateNumber>1</UpdateNumber>
+    <Validation>true</Validation>
+    <AutoSync>true</AutoSync>
+  </TestModel>
+  <Preferences id="G}46913807:15840afc688:-7bcf">
+    <RulesExecutionAlgorithm>RETE</RulesExecutionAlgorithm>
+    <DisallowErrorSuppression>false</DisallowErrorSuppression>
+    <PhraseSuggestions>All</PhraseSuggestions>
+    <RestrictAutoSuggestions>true</RestrictAutoSuggestions>
+    <IncludeChainedExpressions>true</IncludeChainedExpressions>
+  </Preferences>
+  <decisionModel id="L}4">
+    <CreationUpdateNumber>2</CreationUpdateNumber>
+  </decisionModel>
+</RuleDictionary>

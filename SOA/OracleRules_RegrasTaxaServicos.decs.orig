@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decisionServices xmlns="http://xmlns.oracle.com/bpel/rules" name="OracleRules_RegrasTaxaServicos">
+   <ruleEngineProvider provider="Oracle_11.0.0.0.0" name="OracleRulesSDK">
+      <repository type="SCA-Archive">
+         <path>PrjTaxaServicos/oracle/rules/www/fiap/com/br/OracleRules_RegrasTaxaServicos.rules</path>
+      </repository>
+   </ruleEngineProvider>
+   <decisionService name="OracleRules_RegrasTaxaServicos_DecisionService_1" ruleEngineProviderReference="OracleRulesSDK" targetNamespace="http://xmlns.oracle.com/OracleRules_RegrasTaxaServicos/OracleRules_RegrasTaxaServicos_DecisionService_1">
+      <catalog>OracleRules_RegrasTaxaServicos</catalog>
+      <pattern name="CallFunctionStateless">
+         <arguments>
+            <call>www.fiap.com.br.OracleRules_RegrasTaxaServicos.DecisionService_1</call>
+         </arguments>
+      </pattern>
+      <pattern name="CallFunctionStateful">
+         <arguments>
+            <call>www.fiap.com.br.OracleRules_RegrasTaxaServicos.DecisionService_1</call>
+         </arguments>
+      </pattern>
+   </decisionService>
+</decisionServices>

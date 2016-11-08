@@ -1,0 +1,32 @@
+<?xml version= '1.0' encoding= 'UTF-8' ?>
+<wsdl:definitions
+     name="BPELProcess_TaxaServicos"
+     targetNamespace="http://xmlns.oracle.com/AppSistemaAtendimento/PrjTaxaServicos/BPELProcess_TaxaServicos"
+     xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+     xmlns:client="http://xmlns.oracle.com/AppSistemaAtendimento/PrjTaxaServicos/BPELProcess_TaxaServicos"
+     xmlns:ns1="http://www.fiap.com.br"
+     xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype"
+    >
+    <plnk:partnerLinkType name="BPELProcess_TaxaServicos">
+        <plnk:role name="BPELProcess_TaxaServicosProvider" portType="client:BPELProcess_TaxaServicos"/>
+    </plnk:partnerLinkType>
+    <wsdl:types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+             xmlns:client="http://xmlns.oracle.com/AppSistemaAtendimento/PrjTaxaServicos/BPELProcess_TaxaServicos"
+             xmlns:ns1="http://www.fiap.com.br" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype">
+            <import namespace="http://www.fiap.com.br" schemaLocation="../Schemas/taxa_servicos.xsd"/>
+        </schema>
+    </wsdl:types>
+    <wsdl:message name="BPELProcess_TaxaServicosRequestMessage">
+        <wsdl:part name="payload" element="ns1:paramIn"/>
+    </wsdl:message>
+    <wsdl:message name="BPELProcess_TaxaServicosResponseMessage">
+        <wsdl:part name="payload" element="ns1:paramOut"/>
+    </wsdl:message>
+    <wsdl:portType name="BPELProcess_TaxaServicos">
+        <wsdl:operation name="process">
+            <wsdl:input message="client:BPELProcess_TaxaServicosRequestMessage"/>
+            <wsdl:output message="client:BPELProcess_TaxaServicosResponseMessage"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>
